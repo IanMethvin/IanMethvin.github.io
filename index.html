@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<title>Hank Quinlan, Horrible Cop</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/ian.css">
+		<title>Ian Methvin</title>
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+						<div id="headShotSummary" class="col-md-4">
+								<img src="img/ianCircle.png" alt="Ian Methvin" id="headShot" width="300" height="300">
+								<h3>Ian Methvin</h3>
+								<p>University of California, Irvine</p>
+								<p><a href="https://github.com/IanMethvin">github.com/IanMethvin</a></p>
+						</div>
+						<div id="aboutMe" class="col-md-8">
+							<h1>About Me</h1>
+							<p>
+								I am a Software Engineer currently employed as a Full Stack Developer 
+								working primarily with the .NET Framework. I hold a BS in Computer Science
+								specializing in Information from the University of California, Irvine.
+							</p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<h1>Projects</h1>
+					</div>
+					<div class="col-md-8" style="margin-top:20px;">
+						<div id="tickerDiv">
+							<img src="img/chromeTickerSmall.png" height="214" width="600" onmouseover="this.width='1200'; this.height='428'" onmouseout="this.width='600'; this.height='214'">
+						</div>
+						<h3>Chrome Stock Ticker</h3> 
+						<a href="https://github.com/IanMethvin/cExtension">https://github.com/IanMethvin/cExtension</a>
+						<p>
+							My first Chrome Extension, a simple system that adds a stocker ticker to the top 
+							of any web page you are on. Utilizing Yahoo Finance API, users can customize the 
+							symbols displayed in the ticker.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer>
     		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+        		<li><a href="mailto:ipmethvin@gmail.com">email</a></li>
+        		<li><a href="https://github.com/IanMethvin">github.com/IanMethvin</a></li>
 			</ul>
 		</footer>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
