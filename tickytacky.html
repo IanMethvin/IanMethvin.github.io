@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Library stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+
+        <!-- Application Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/tickyTacky.css">
+
+        <!-- Library scripts -->
+        <script type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="libraries/underscore-min.js"></script>
+        
+        <!-- Application scripts -->
+        <script type="text/javascript" src="js/Symbols.js"></script>
+        <script type="text/javascript" src="js/CanvasState.js"></script>
+        <script type="text/javascript" src="js/TickyTacky.js"></script>
+    </head>
+    <body onload="initializeBoard()">
+        <section class="section is-medium">
+            <!-- Container for game canvas  -->
+            <div id="gameContainer" class="container" unselectable="on">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title is-1" style="color:#00d1b2">Ticky Tacky</h1>
+                        
+                        <article class="message is-primary">
+                            <div class="message-header">
+                                <p>Game Description</p>
+                            </div>
+                            <div class="message-body content">
+                                <span>Welcome to Ticky Tacky, an HTML 5 based implementation of the original Tic Tac Toe game.</span>
+                                <br/><br/>
+                                <p>
+                                    Built with:
+                                    <ul>
+                                        <li> HTML5 Canvas </li>
+                                        <li> jQuery </li>
+                                        <li> CSS </li>
+                                    </ul>
+                                </p>
+
+                                <p>
+                                    Brief description of the game:
+                                    <ul>
+                                        <li> No time limit </li>
+                                        <li> Board waits for user input before responding </li>
+                                        <li> Responding AI uses random move algorithm </li>
+                                        <li> Game tracks win status for either user or AI </li>
+                                        <li> Game ends when one symbol (either X or O) achieves the normal tic-tac-toe win requirements. </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <!-- Header used to restart the game on click or on esc press. -->
+                        <a id="restartHeader" class="button is-primary">Press ESC or click here to restart the game</a>
+                    </div>
+                    <div class="column">    
+                        <!-- Canvas Game Board - Make sure height and width are multiples of 300 for easy division -->
+                        <canvas id="gameCanvas" height="600" width="600">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+            
+                        <h1 id="gameOverHeader" class="title is-3"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

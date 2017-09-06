@@ -1,0 +1,27 @@
+#gameContainer {
+    text-align: center;
+}
+
+#gameOverHeader {
+    display: none;
+    margin-top: 35px;
+    position: absolute;
+}
+
+h1 {
+    color: #008b8b !important;
+}
+
+.message-header, #restartHeader{
+    background-color: #008b8b !important;
+}
+
+#restartHeader:hover {
+    background-color: #2ea0a0 !important;
+}
+
+.message-body {
+    color: #008b8b !important;
+    text-align: left;
+    font-size: .90rem;
+}
