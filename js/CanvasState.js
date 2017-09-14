@@ -8,7 +8,7 @@ function CanvasState(canvas) {
     this.ctx = canvas.getContext('2d');
 
     // Initialize game state properties
-    this.quadrantDividend = 200;
+    this.quadrantDividend = this.width / 3;
     this.isUserTurn = true;
     this.movesListX = [];
     this.movesListO = [];

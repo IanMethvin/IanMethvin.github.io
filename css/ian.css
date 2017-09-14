@@ -73,6 +73,11 @@ ul.posts li {
     margin-bottom: 20px;
 }
 
+#tickyTackyHolder {
+    margin: 0 auto;
+    width: 300px;
+}
+
 .projectTitle {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.75rem;
