@@ -79,7 +79,7 @@ ul.posts li {
 }
 
 .bluishFont {
-    color: #008b8b;
+    color: #008b8b !important;
 }
 
 .projectTitle {
