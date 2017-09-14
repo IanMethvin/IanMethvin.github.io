@@ -78,6 +78,10 @@ ul.posts li {
     width: 300px;
 }
 
+.bluishFont {
+    color: #008b8b;
+}
+
 .projectTitle {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.75rem;
