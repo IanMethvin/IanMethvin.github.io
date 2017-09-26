@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Library stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+
+        <!-- Application Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/Batty.css">
+
+        <!-- Library scripts -->
+        <script type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="libraries/underscore-min.js"></script>
+
+        <!-- Application scripts -->
+        <script type="text/javascript" src="js/Batty/Batty.js"></script>
+        <script type="text/javascript" src="js/Batty/Bat.js"></script>
+        <script type="text/javascript" src="js/Batty/Obstacle.js"></script>
+        <script type="text/javascript" src="js/Batty/CanvasState.js"></script>
+    </head>
+    <body onload="initializeGameState()" unselectable="on">
+        <section class="section is-small" style="padding-top: 0px;">
+            <!-- Container for game canvas  -->
+            <div id="gameContainer" class="container" unselectable="on">
+                <div class="columns is-vcentered" unselectable="on">
+                    <div class="column" unselectable="on">
+                        <h1 class="title is-1" unselectable="on">Batty</h1>
+                        <button id="muteBGM">Press ESC or Click Here to Toggle Background Music</button>
+                        <canvas id="battyCanvas" height="700" width="1400"></canvas> 
+                    </div>
+                </div>
+            </div>
+            <div style="display:none">
+                    <!-- style="display:none" -->
+                <img id="battyUp" src="img/Batty/battyUp.png">
+                <img id="battyDown" src="img/Batty/battyDown.png">
+                <img id="battyNeutral" src="img/Batty/battyNeutral.png">
+                <img id="garlick" src="img/Batty/garlick.png">
+            </div>
+            <!-- Audio element to provide background music -->
+            <audio id="background-music">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+        </section>
+    </body>
+</html>

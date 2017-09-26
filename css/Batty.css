@@ -1,0 +1,18 @@
+body {
+    background-color: #1c1c1c;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: white !important;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#muteBGM {
+    margin-bottom: 25px;
+}
+
