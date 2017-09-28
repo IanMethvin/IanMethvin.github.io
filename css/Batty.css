@@ -16,3 +16,6 @@ h1 {
     margin-bottom: 25px;
 }
 
+#battyCanvas {
+    border: solid 1px white;   
+}
