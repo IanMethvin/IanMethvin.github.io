@@ -70,3 +70,23 @@ function isBetween(point, min, max) {
 
     return false;
 }
+
+//testing something else
+$.ajax({
+    type: "POST",
+    url: "https://evbcih8157.execute-api.us-west-1.amazonaws.com/prod/NodeDemo",
+    data: 
+     JSON.stringify({
+        "key3": "value3",
+        "key2": "value2",
+        "key1": "value1"
+      }),
+    dataType: "text",
+    success: function (data) {
+     alert (data);   
+    },
+    error: function (xhr, ajaxOptions, thrownError) {
+        alert('error ' + xhr.status + ' ' + thrownError);
+        alert(thrownError);
+    }
+  });
