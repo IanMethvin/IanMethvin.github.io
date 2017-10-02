@@ -6,6 +6,8 @@ var audioMuted = false;
 
 // Initialize the game board on page load.
 function initializeCave () {
+    initit();
+    
     canvasObj = $('#battyCanvas');
     cState = new CanvasState(canvasObj[0]);
 }
@@ -71,6 +73,8 @@ function isBetween(point, min, max) {
     return false;
 }
 
+function initit() {
+    
 //testing something else
 $.ajax({
     type: "POST",
@@ -90,3 +94,4 @@ $.ajax({
         alert(thrownError);
     }
   });
+}
