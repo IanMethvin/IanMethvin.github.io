@@ -1,0 +1,104 @@
+body { 
+    margin: 60px auto;
+    width: 70%;
+    /* background-image: url('../img/circuit1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  */
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+section {
+    padding-bottom: 150px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h2 {
+    /* font-size: 2em; */
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h3 {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #333;
+    margin-bottom: 8px;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+#aboutMe {
+    text-align: center;
+}
+
+#headShotSummary {
+    text-align: center;
+}
+
+#headShot {
+    /* width: 100%; */
+    padding-bottom: 10px;
+}
+
+.projectImgDiv {
+    overflow: hidden;
+    /* height: 214px;
+    width: 600px; */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#tickyTackyHolder {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.bluishFont {
+    color: #008b8b !important;
+}
+
+.projectTitle {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.75rem;
+    display: inline-block;
+}
+
+.project {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

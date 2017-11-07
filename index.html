@@ -1,89 +1,132 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Library Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-		<!-- Page Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/ian.css">
+  <!-- Site Properties -->
+  <title>Ian Methvin</title>
 
-		<!-- Project Stylesheets -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/tickyTacky.css"> -->
+  <!-- Page Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/ian.css">
 
-		<!-- Libraries -->
-		<script type="text/javascript" src="libraries/jquery-2.2.4.min.js"></script>
-		<script type="text/javascript" src="libraries/bootstrap.min.js"></script>
-		<script type="text/javascript" src="libraries/underscore-min.js"></script>
-		
-		<!-- Ticky Tacky Project -->
-		<script type="text/javascript" src="js/TickyTacky/Symbols.js"></script>
-        <script type="text/javascript" src="js/TickyTacky/CanvasState.js"></script>
-		<script type="text/javascript" src="js/TickyTacky/tickyTacky.js"></script>
-		
-		<title>Ian Methvin</title>
-	</head>
-	<body onload="initializeBoard()">
-		<section id="about">
-			<div class="container">
-				<div class="row">
-						<div id="headShotSummary" class="col-md-4">
-								<img src="img/ianCircle.png" alt="Ian Methvin" id="headShot" width="300" height="300">
-								<h3>Ian Methvin</h3>
-								<p>University of California, Irvine</p>
-								<p><a href="https://github.com/IanMethvin">github.com/IanMethvin</a></p>
-						</div>
-						<div id="aboutMe" class="col-md-8">
-							<h1>About Me</h1>
-							<p>
-								I am a Software Engineer currently employed as a Full Stack Developer 
-								working primarily with the .NET Framework. I hold a BS in Computer Science
-								specializing in Information from the University of California, Irvine.
-							</p>
-						</div>
-				</div>
-			</div>
-		</section>
-		<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-2">
-						<h1>Projects</h1>
-					</div>
-					<div class="col-md-8" style="margin-top:20px;">
-						<div class="project" id="batty">
-							<h3>HTML5 Mini Game - Batty</h3>
-							Code: <a href="https://github.com/IanMethvin/Batty">https://github.com/IanMethvin/Batty</a>
-							<span class="bluishFont">+</span>
-							Demo: <a href="Batty.html">IanMethvin.github.io/Batty.html</a>
-							<p>
-								Continuing with HTML5 canvas development, this mini game focuses on drawing
-								moving objects. Batty is a simple survival game that allows the user to play as a bat
-								and avoid obstacles for as long as possible.
-							</p>
-							<div id="tickerDiv">
-									<img src="img/battyDemo.png" height="214" width="600">
-								</div>
-						</div>
-						<div class="project" id="tickTack">
-							<h3>HTML5 Tick Tack Toe</h3> 
-							Code: <a href="https://github.com/IanMethvin/TickyTacky">https://github.com/IanMethvin/TickyTacky</a>
-							<span class="bluishFont">+</span>
-							Demo: <a href="tickytacky.html">IanMethvin.github.io/tickytacky.html</a>
-							<p>
-								A quick project to get familiar with animating an HTML5 canvas. Features a simple AI,
-								allowing a player to compete against the computer. 
-							</p>
-							<h5 id="gameOverHeader" class="bluishFont title is-3"></h5>
-							<div id="tickyTackyHolder">
-								<canvas id="gameCanvas" height="300" width="300">
-									Your browser does not support the HTML5 canvas tag.
-								</canvas>
-								<a class="bluishFont">Press ESC or click here to restart the game</a>
-							</div>
-							<hr>
-						</div>
-						<div class="project" id="stockTicker">
+  <script src="libraries/jquery-3.2.1.min.js"></script>
+  <script src="libraries/semantic.min.js"></script>
+  <script src="js/ian.js"></script>
+</head>
+<body>
 
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+      <a class="active item" href="#">Ian Methvin</a>
+      <a class="item" href="https://www.linkedin.com/in/ian-methvin-56402872/">LinkedIn</a>
+      <a class="item" href="https://github.com/IanMethvin/">Github</a>
+      <a class="item" href="img/IanMethvinResume.pdf">Resume</a>
+    <!--<div class="right menu">
+      <div class="item">
+        <a class="ui button">temp</a>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item" href="#">Ian Methvin</a>
+    <a class="item" href="https://www.linkedin.com/in/ian-methvin-56402872/">LinkedIn</a>
+    <a class="item" href="https://github.com/IanMethvin/">Github</a>
+    <a class="item" href="img/IanMethvinResume.pdf">Resume</a>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical center aligned segment" style="padding-top: 0px;">
+
+    <div class="ui container" >
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item" href="#">Ian Methvin</a>
+        <a class="item" href="https://www.linkedin.com/in/ian-methvin-56402872/">LinkedIn</a>
+        <a class="item" href="https://github.com/IanMethvin/">Github</a>
+        <div class="right item">
+          <a class="item" href="img/IanMethvinResume.pdf">Resume</a>
+          <!-- <a class="ui inverted button">temp</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="ui one column grid container stackable" id="header">
+        <div class="four wide column">
+            <div class="middle aligned content">
+                <img src="img/ianCircle.png" alt="Ian Methvin" id="headShot" class="oneHundred">
+                <h3>Ian Methvin</h3>
+                <p>
+                  University of California, Irvine
+                  <br />
+                  First American Financial
+                </p>
+                <!-- <p><a href="https://github.com/IanMethvin">github.com/IanMethvin</a></p> -->
+            </div>
+        </div>
+        <div class="twelve wide column middle aligned content">
+            <div class="">
+                <h1>ABOUT ME</h1>
+                <p>
+                    I am a Software Engineer currently employed as a Full Stack Developer 
+                    working primarily with the .NET Framework. 
+                    <br />
+                    I hold a BS in Computer Science
+                    specializing in Information from the University of California, Irvine.
+                </p>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="ui vertical segment zeroBtmPadding">
+    <div class="ui one column grid container stackable" id="projects">
+        <div class="row">
+          <div class="four wide column">
+            <h1>PROJECTS</h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="four wide column"></div>
+            <div class="twelve wide column">
+                <h3>HTML5 Mini Game - Batty</h3>
+                Code: <a href="https://github.com/IanMethvin/Batty">https://github.com/IanMethvin/Batty</a>
+                <span class="bluishFont">+</span>
+                Demo: <a href="Batty.html">IanMethvin.github.io/Batty.html</a>
+                <p>
+                  Continuing with HTML5 canvas development, this mini game focuses on drawing
+                  moving objects. Batty is a simple survival game that allows the user to play as a bat
+                  and avoid obstacles for as long as possible.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four wide column"></div>
+            <div class="twelve wide column">
+                <h3>HTML5 Tick Tack Toe</h3> 
+                Code: <a href="https://github.com/IanMethvin/TickyTacky">https://github.com/IanMethvin/TickyTacky</a>
+                <span class="bluishFont">+</span>
+                Demo: <a href="tickytacky.html">IanMethvin.github.io/tickytacky.html</a>
+                <p>
+                  A quick project to get familiar with animating an HTML5 canvas. Features a simple AI,
+                  allowing a player to compete against the computer. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four wide column"></div>
+            <div class="twelve wide column">
 								<h3>Chrome Stock Ticker</h3> 
 								<a href="https://github.com/IanMethvin/cExtension">https://github.com/IanMethvin/cExtension</a>
 								<p>
@@ -91,19 +134,37 @@
 									of any web page you are on. Utilizing Yahoo Finance API, users can customize the 
 									symbols displayed in the ticker.
 								</p>
-								<div id="tickerDiv">
-									<img src="img/chromeTickerSmall.png" height="214" width="600" onmouseover="this.width='1200'; this.height='428'" onmouseout="this.width='600'; this.height='214'">
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
-    		<ul>
-        		<li><a href="mailto:ipmethvin@gmail.com">email</a></li>
-        		<li><a href="https://github.com/IanMethvin">github.com/IanMethvin</a></li>
-			</ul>
-		</footer>
-	</body>
+            </div>
+        </div>
+    </div>
+
+  <div class="ui inverted vertical segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+          <!-- <div class="one wide column"></div> -->
+        <div class="two wide column">
+          <!-- <h4 class="ui inverted header">About</h4> -->
+          <div class="ui inverted link list">
+            <a href="mailto:ipmethvin@gmail.com">Contact</a>
+          </div>
+        </div>
+        <div class="twelve wide column">
+          <!-- <h4 class="ui inverted header">Services</h4> -->
+          <div class="ui inverted link list">
+            <p>
+              Finding the fun in coding
+              &#9642;
+              Looking for interesting and engaging projects
+              &#9642; 
+              Let's talk sports
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
 </html>
